@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>HTML Elements Quiz!</h1>
+    <main>
+
+        <div class="T">
+            <section class= "card-timer">
+                <div class= "timer-text1">
+                <div class="timer-count">60</div>
+                <h3 class= "timer-text">seconds remaining</h3>
+            </section>
+            <button id = "timerstart">Start</button>
+        </div>
+
+        <section id="Q1">
+            <h3>#1 element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code.?</h3>
+                    <div>
+                        <input class= "question1_checkbox" type="checkbox" value="correct" >
+                        <p>&lt;script</script>&gt; &lt;/script&gt;</p>
+                    </div>
+                    <div>
+                        <input class= "question1_checkbox" type="checkbox" value="incorrect">
+                        <p>&lt;main&gt; &lt;/main&gt;</p>
+                    </div>
+                    <div>
+                        <input class= "question1_checkbox" type="checkbox" value="incorrect">
+                        <p>&lt;body&gt; &lt;/body&gt;</p>
+                    </div>
+                    <div class="bottom">    
+
+                        <div id ="button">
+                            <button id = "submit1">Submit</button>
+                            <button id = "next"><a href="#Q2">Next</a></button>
+                        </div>
+                    </div>    
+                </div>
+        </section>
+
+        <section id="Q2">
+            <h3>#2 Which operator means "Does-not-equal" ?</h3>
+                    <div>
+                        <input class= "question2_checkbox" type="checkbox" value="incorrect" >
+                        <p>=</p>
+                    </div>
+                    <div>
+                        <input class= "question2_checkbox" type="checkbox" value="incorrect">
+                        <p>===</p>
+                    </div>
+                    <div>
+                        <input class= "question2_checkbox" type="checkbox" value="correct">
+                        <p>!===</p>
+                    </div>
+                    <div class="bottom">  
+
+                        <div id ="button">
+                            <button id = "submit2">Submit</button>
+                            <button id = "next"><a href="#Q3">Next</a></button>
+                        </div>
+                    </div>    
+                </div>
+        </section>
+
+        <section id="Q3">
+            <h3>#3 what is the correct way to write a comment in JS ?</h3>
+                    <div>
+                        <input class= "question3_checkbox" type="checkbox" value="correct" >
+                        <p>//comment</p>
+                    </div>
+                    <div>
+                        <input class= "question3_checkbox" type="checkbox" value="incorrect">
+                        <p>/*comment*/</p>
+                    </div>
+                    <div>
+                        <input class= "question3_checkbox" type="checkbox" value="incorrect">
+                        <p>&lt;!--comment--&gt;</p>
+                    </div>
+                    <div class="bottom">
+                          
+                        <div id ="button">
+                            <button id = "submit3">Submit</button>
+                        </div>
+                    </div>    
+                </div>
+        </section>
+
+        <form>
+            <ul>
+              <h3>
+                <label for="">Player initials</label>
+                <textarea id="msg" name="initialsentered"></textarea>
+              </h3>
+            </ul>
+            <button id="saveinitials">SAVE</button>
+          </form> 
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

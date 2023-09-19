@@ -1,0 +1,99 @@
+@media (max-width: 435px){
+    h1 {
+        font-size: 25px;
+    }
+    
+    * {
+        font-size: 12px;
+    }
+    
+}
+/* page margin */
+* {
+    background-color: black;
+    margin: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*title styling*/
+h1 {
+  background-color: aquamarine;
+  color: black;
+  background-image: linear-gradient(to right);
+  border-radius: 15px;
+}
+
+/*center content box styling*/
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-style: solid;
+    border-color: aquamarine;
+    border-width: 1px;
+    margin: 55px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+/*box content layout*/
+div {
+    display: flex;
+    flex-direction: row;
+}
+ 
+/* bottom section*/
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    margin: 0px;
+    height: 40px;
+}
+
+/*timer section*/
+.T {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    height: 1px;
+}
+
+.card-timer {
+    margin: 0px;
+    padding: 0px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.timer-count {
+    margin: 5px;
+}
+
+.timer-text1 {
+    margin: 0px;
+    border-radius: 15px;
+}
+
+.timer-text {
+    margin: 3px;
+}
+
+
+/*Next button section*/
+/*button placement and size. ASK HOW TO CENTER TEXT TO BUTTON*/
+button {
+    padding: 15px 7px;
+    color: aquamarine;
+    font-size: 15px;
+    margin: 0px;
+}
+
+/* button hover effect */
+button:hover {
+    color: black;
+    background: aquamarine;
+  }
