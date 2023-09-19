@@ -16,7 +16,7 @@ n/a
 
 
 ## Screenshot
-![Alt text](/Assets//images/quizscreenshot.png "screenshot of quiz project")
+![Alt text](/Assets/images/quizscreenshot.png "screenshot of quiz project")
 
 ## Credits
 
