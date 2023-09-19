@@ -36,12 +36,12 @@ timerstart.addEventListener("click", function() {
     startTimer();
 });
 
-// Set check box to checked for Q1:
+// Set check box to checked for Question1:
 
 submit1.addEventListener('click', function(event){
     event.preventDefault()
 
-    let question_checkboxes = document.querySelectorAll('.question1_checkbox')
+    let question_checkboxes = document.querySelectorAll('.question1-1_checkbox')
     console.log(question_checkboxes)
     for(i=0; i<question_checkboxes.length; i++){
         if(question_checkboxes[i].checked === true && question_checkboxes[i].value === "correct"){
@@ -58,12 +58,12 @@ submit1.addEventListener('click', function(event){
     }
 });
 
-// Set check box to checked for Q2:
+// Set check box to checked for Question2:
 
 submit2.addEventListener('click', function(event){
     event.preventDefault()
 
-    let question_checkboxes = document.querySelectorAll('.question2_checkbox')
+    let question_checkboxes = document.querySelectorAll('.question2-3_checkbox')
     console.log(question_checkboxes)
     for(i=0; i<question_checkboxes.length; i++){
         console.log(event.target.checked);
@@ -82,11 +82,11 @@ submit2.addEventListener('click', function(event){
     }
 });
 
-// Set check box to checked for Q3:
+// Set check box to checked for Question3:
 submit3.addEventListener('click', function(event){
     event.preventDefault()
 
-    let question_checkboxes = document.querySelectorAll('.question3_checkbox')
+    let question_checkboxes = document.querySelectorAll('.question3-1_checkbox')
     console.log(question_checkboxes)
     for(i=0; i<question_checkboxes.length; i++){
         if(question_checkboxes[i].checked === true && question_checkboxes[i].value === "correct"){
