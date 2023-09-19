@@ -15,9 +15,8 @@ n/a
 ## Usage
 
 
-SCREENSHOT
-![Alt text](/Assets/quizscreenshot.png "screenshot of quiz project")
-
+## Screenshot
+![Alt text](/Assets//images/quizscreenshot.png "screenshot of quiz project")
 
 ## Credits
 
