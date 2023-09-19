@@ -1,6 +1,3 @@
-//TRACK SCORED AND SAVE SCORE.
-let correctAnswer = 0
-
 //TIMER:
 var timerElement = document.querySelector(".timer-count");
 var timerstart = document.querySelector("#timerstart");
@@ -103,29 +100,39 @@ submit3.addEventListener('click', function(event){
     }
 });
 
-//save players info
-var initialsentered = document.getElementById("msg");
-var saveb = document.getElementById("saveinitials");
+//TRACK SCORE AND SAVE SCORE.
+var saveinitials = document.querySelector("#saveinitials");
+var initialEntered = document.querySelector("#initialEntered");
+let correctAnswer = 0;
 
-saveb.addEventListener("click", function(event) {
-    event.preventDefault();
-
-    var playeroutcome = {
-    initials: initialsentered.value,
-    score: correctAnswer,
-    Comment: initialsentered.value.trim()
-    }
-});
-
-console.log(correctAnswer);
-// Save score 
-localStorage.setItem("Correct answer count", JSON.stringify(correctAnswer));
-renderMessage();
-
-// Get stored score
+// renderMessage function 
 function renderMessage() {
-    var correctAnswer = JSON.parse(localStorage.getItem("Correct answer count"));
-    if (correctAnswer !== null) {
-      document.querySelector(".message").textContent = "your score is " + correctAnswer
-    }
-};
+  let score = Number(correctAnswer);
+  document.querySelector(".message").textContent = "Your score is " + score;
+}
+
+// Handle form submit
+saveinitials.addEventListener("click", function(event) {
+
+  event.preventDefault();
+
+  // Create player outcome object
+  let playeroutcome = {
+    initials: initialEntered.value,
+    score: correctAnswer, 
+    comment: initialEntered.value.trim()
+  };
+  
+  // Save player data to localStorage
+  localStorage.setItem("playerInfo", JSON.stringify(playeroutcome));
+
+  // Update correctAnswer value
+  correctAnswer++;
+
+  // Render message
+  renderMessage();
+  
+  // Save score 
+  localStorage.setItem("Correct answer count", JSON.stringify(correctAnswer));
+  
+});
